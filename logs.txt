@@ -1,0 +1,21 @@
+Stack: TypeScript, Stylus
+
+stylus -w src/styles.styl -o src/styles.css
+
+----------------- code style rules
+- abbreviations: container - cont, image - img, button - btn,
+- if purpose of a div is to contain other elements, divs, then its className should end with 'Cont', e.g. 'headerInnerCont'
+- all classes names are written in camel case, even if it is component, part of component, e.g. '.btnFilled', '.ProductFeaturesInfoCont'
+
+----------------- logs
+01.04.22 - app created
+02.04.22 - product card component development
+03.04.22 - product card component is ready
+04.04.22 - filling product cards
+05.04.22 - header development
+06.04.22 - header is ready, code refactoring
+09.04.22 - stylelint installed, successfully configured for stylus
+
+----------------- to do:
+- switch ReactDOM.render to ReactDOMClient.createRoot (https://github.com/reactwg/react-18/discussions/5)
+- add TypeScript

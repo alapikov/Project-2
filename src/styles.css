@@ -1,0 +1,304 @@
+@font-face {
+  src: url("fonts/interReg.ttf");
+  font-family: 'Inter';
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  src: url("fonts/interRegIt.ttf");
+  font-family: 'Inter';
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  src: url("fonts/interLight.ttf");
+  font-family: 'Inter';
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  src: url("fonts/interLightIt.ttf");
+  font-family: 'Inter';
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  src: url("fonts/interSemibold.ttf");
+  font-family: 'Inter';
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  src: url("fonts/interSemiboldIt.ttf");
+  font-family: 'Inter';
+  font-weight: 600;
+  font-style: italic;
+}
+@font-face {
+  src: url("fonts/myriadproReg.ttf");
+  font-family: 'Myriad Pro';
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  src: url("fonts/myriadproRegIt.ttf");
+  font-family: 'Myriad Pro';
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  src: url("fonts/myriadproLight.ttf");
+  font-family: 'Myriad Pro';
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  src: url("fonts/myriadproLightIt.ttf");
+  font-family: 'Myriad Pro';
+  font-weight: 200;
+  font-style: italic;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0 auto;
+  color: #1b1b1b;
+  background-color: #d1dfeb;
+  cursor: default;
+}
+#Container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.headerCont {
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  width: 100vw;
+  height: 52px;
+  box-shadow: 0px 0px 24px -5px #000;
+  background-color: #fff;
+}
+.headerInnerCont {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 60%;
+  height: 100%;
+}
+.headerLogo {
+  height: 36px;
+}
+.searchbarCommonCont {
+  border: 1px solid #9e9e9e;
+  border-radius: 16px;
+  height: 34px;
+  font-size: 18px;
+  line-height: 37px;
+  text-align: center;
+  color: #9e9e9e;
+  font-family: 'Myriad Pro';
+  font-weight: 400;
+  font-style: italic;
+}
+#headerBtnCont {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 8px;
+  width: 170px;
+}
+.btnFilled {
+  border-radius: 16px;
+  height: 30px;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  color: #fff;
+  background-color: #608ccd;
+  font-family: 'Myriad Pro';
+  font-weight: 200;
+  font-style: normal;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+  transition-delay: 0s;
+  transition-timing-function: cubic-bezier(0.28, 0.03, 0.13, 0.94);
+}
+.btnFilled:hover {
+  transition-property: background-color;
+  transition-duration: 0.5s;
+  transition-delay: 0s;
+  transition-timing-function: cubic-bezier(0.28, 0.03, 0.13, 0.94);
+  background-color: #5178b3;
+}
+.btnUnfilled {
+  border: 1px solid #9e9e9e;
+  border-radius: 16px;
+  height: 30px;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  font-family: 'Myriad Pro';
+  font-weight: 200;
+  font-style: normal;
+}
+.ProductCardCont {
+  display: flex;
+  flex-direction: row;
+  align-items: top;
+  justify-content: flex-start;
+  margin-bottom: 26px;
+  border-radius: 40px;
+  width: 920px;
+  height: 290px;
+  background-color: #fff;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-style: normal;
+}
+.ProductImgCont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 28px;
+  margin-left: 26px;
+  width: 210px;
+  height: 250px;
+}
+.ProductImg {
+  border-radius: 10px;
+  width: 210px;
+}
+.ProductImgArrowsCont {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 6px;
+}
+.ProductImgArrow {
+  height: 33px;
+}
+.ProductInfoCont {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: flex-start;
+  margin-left: 32px;
+  padding-top: 26px;
+  width: 360px;
+}
+.ProductInfoName {
+  font-family: 'Inter';
+  font-weight: 600;
+  font-style: normal;
+  padding-bottom: 2px;
+  font-size: 24px;
+}
+.ProductInfoType {
+  font-family: 'Inter';
+  font-weight: 400;
+  font-style: italic;
+  font-size: 16px;
+}
+.ProductInfoFeaturesCont {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-top: 10px;
+  width: 100%;
+  line-height: 30px;
+}
+.ProductFeaturesInfoCont {
+  text-align: right;
+}
+.ProductPriceCont {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding-top: 30px;
+  width: 260px;
+}
+.ProductPriceIconsRow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+  width: 90%;
+}
+.bonuspoints {
+  font-family: 'Inter';
+  font-weight: 300;
+  font-style: italic;
+  margin-bottom: 4px;
+  font-size: 16px;
+}
+.ProductPriceBonuses {
+  font-family: 'Inter';
+  font-weight: 600;
+  font-style: italic;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+.yourprice {
+  font-family: 'Inter';
+  font-weight: 300;
+  font-style: italic;
+  margin-bottom: 4px;
+  font-size: 16px;
+}
+.ProductPrice {
+  font-family: 'Inter';
+  font-weight: 600;
+  font-style: italic;
+  margin-bottom: 24px;
+  font-size: 32px;
+  color: #36a166;
+}
+.ProductPriceIcon {
+  margin-right: 16px;
+  height: 20px;
+}
+.AddtocartBtn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  width: 160px;
+  height: 50px;
+  font-size: 22px;
+  text-align: center;
+  color: #fff;
+  background-color: #608ccd;
+  font-family: 'Inter';
+  font-weight: 300;
+  font-style: normal;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+  transition-delay: 0s;
+  transition-timing-function: cubic-bezier(0.28, 0.03, 0.13, 0.94);
+}
+.AddtocartBtn:hover {
+  transition-property: background-color;
+  transition-duration: 0.5s;
+  transition-delay: 0s;
+  transition-timing-function: cubic-bezier(0.28, 0.03, 0.13, 0.94);
+  background-color: #5178b3;
+}
+.FreeSpace {
+  width: 100px;
+}

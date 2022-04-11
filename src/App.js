@@ -1,24 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import ProductCard from "./components/product/ProductCard";
+import Header from "./components/Header"
+import * as data from './data.js';
+import FreeSpace from './components/FreeSpace';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    return (
+        <div id="Container">
+            <Header />
+            <FreeSpace style={{height: '80px'}} />
+            <ProductCard {...data.product1} />
+            <ProductCard {...data.product2} />
+            <ProductCard {...data.product3} />
+            <ProductCard {...data.product4} />
+            <ProductCard {...data.product5} />
+            <ProductCard {...data.product6} />  
+        </div>
+        
   );
 }
 
